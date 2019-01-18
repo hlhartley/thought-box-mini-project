@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './CSS/main.scss';
 import CreateThought from './createThought/CreateThought';
 import { ThoughtList } from './thoughtList/ThoughtList';
 
