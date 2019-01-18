@@ -5,7 +5,7 @@ import CreateThought from './CreateThought.js';
 
 describe('CreateThought', () => {
 
-  it.skip('should match the snapshot', () => {
+  it('should match the snapshot', () => {
     const wrapper = shallow(<CreateThought />);
     expect(wrapper).toMatchSnapshot()
   });
