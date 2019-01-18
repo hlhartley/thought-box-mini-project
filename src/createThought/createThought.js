@@ -20,7 +20,7 @@ class CreateThought extends Component {
 
   render() {
     return(
-      <div>
+      <div className='create-thought-container'>
         Title: <input type='text' name='title' className='title' onChange={this.handleChange.bind(this)}></input>
         Body: <input type='text' name='body' className='body' onChange={this.handleChange.bind(this)}></input>
         <input type='submit' name='submit' className='submit-btn' onSubmit={this.handleSubmit.bind(this)}></input>

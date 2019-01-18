@@ -3,9 +3,16 @@ import { shallow, mount } from 'enzyme';
 import App from './App';
 
 it('matches the snapshot', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toMatchSnapshot()
 });
 
 it('renders a thoughtList with the correct props', () => {
+    const wrapper = shallow(<App />);
+    const { thoughtList, deleteThought, editThought } = wrapper.find(ThoughtList).props();
+    expect(thoughtList).toEqual([]);
+    expect(deleteThought).toBeInstanceOf(Function);
+    expect(editThought).toBeInstanceOf(Function);
 });
 
 it('initial state is an empty array', () => {

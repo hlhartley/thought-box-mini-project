@@ -18,13 +18,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        "CreateThought",
+        "Title: ",
         <input
           className="title"
           name="title"
           onChange={[Function]}
           type="text"
         />,
+        "Body: ",
         <input
           className="body"
           name="body"
@@ -38,10 +39,11 @@ ShallowWrapper {
           type="submit"
         />,
       ],
+      "className": "create-thought-container",
     },
     "ref": null,
     "rendered": Array [
-      "CreateThought",
+      "Title: ",
       Object {
         "instance": null,
         "key": undefined,
@@ -56,6 +58,7 @@ ShallowWrapper {
         "rendered": null,
         "type": "input",
       },
+      "Body: ",
       Object {
         "instance": null,
         "key": undefined,
@@ -94,13 +97,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          "CreateThought",
+          "Title: ",
           <input
             className="title"
             name="title"
             onChange={[Function]}
             type="text"
           />,
+          "Body: ",
           <input
             className="body"
             name="body"
@@ -114,10 +118,11 @@ ShallowWrapper {
             type="submit"
           />,
         ],
+        "className": "create-thought-container",
       },
       "ref": null,
       "rendered": Array [
-        "CreateThought",
+        "Title: ",
         Object {
           "instance": null,
           "key": undefined,
@@ -132,6 +137,7 @@ ShallowWrapper {
           "rendered": null,
           "type": "input",
         },
+        "Body: ",
         Object {
           "instance": null,
           "key": undefined,
