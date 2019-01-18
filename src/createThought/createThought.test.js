@@ -10,7 +10,7 @@ describe('CreateThought', () => {
     expect(wrapper).toMatchSnapshot()
   });
 
-  it.skip('updates the state of the title field', () => {
+  it('updates the state of the title field', () => {
     const wrapper = mount(<CreateThought/>);
     const mockEvent = { target: { value: 'abc', name: 'title' } }
     const expectedState = {
@@ -21,7 +21,7 @@ describe('CreateThought', () => {
     expect(wrapper.state()).toEqual(expectedState);
   });
 
-  it.skip('updates the state of the body field', () => {
+  it('updates the state of the body field', () => {
     const wrapper = mount(<CreateThought/>);
     const mockEvent = { target: { value: 'abc', name: 'body' } }
     const expectedState = {
@@ -32,20 +32,23 @@ describe('CreateThought', () => {
     expect(wrapper.state()).toEqual(expectedState);
   });
 
-  it.skip('calls createThought prop function with the data from state as an argument, and input fields go back to empty strings', () => {
+  it('calls createThought prop function with the data from state as an argument, and input fields go back to empty strings', () => {
     const createThoughtMock = jest.fn();
     const wrapper = shallow(
       <CreateThought createThought={createThoughtMock} />
     );
-    const expectedState = {
-      title: '',
-      body: ''
-    };
+    // const expectedState = {
+    //   title: '',
+    //   body: ''
+    // };
+    wrapper.setState = {title: 'no', body: 'one'}
 
     // How do we call handleSubmit?
+    wrapper.instance().handleSubmit()
     
     // How do we assert that our mock was called with the
     // correct params?
+    expect(wrapper.state()).toEqual({title: 'no', body: 'one'});
   });
 
 });

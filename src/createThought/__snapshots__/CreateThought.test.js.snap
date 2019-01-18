@@ -17,10 +17,74 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "CreateThought",
+      "children": Array [
+        "CreateThought",
+        <input
+          className="title"
+          name="title"
+          onChange={[Function]}
+          type="text"
+        />,
+        <input
+          className="body"
+          name="body"
+          onChange={[Function]}
+          type="text"
+        />,
+        <input
+          className="submit-btn"
+          name="submit"
+          onSubmit={[Function]}
+          type="submit"
+        />,
+      ],
     },
     "ref": null,
-    "rendered": "CreateThought",
+    "rendered": Array [
+      "CreateThought",
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "title",
+          "name": "title",
+          "onChange": [Function],
+          "type": "text",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "body",
+          "name": "body",
+          "onChange": [Function],
+          "type": "text",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "submit-btn",
+          "name": "submit",
+          "onSubmit": [Function],
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,10 +93,74 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "CreateThought",
+        "children": Array [
+          "CreateThought",
+          <input
+            className="title"
+            name="title"
+            onChange={[Function]}
+            type="text"
+          />,
+          <input
+            className="body"
+            name="body"
+            onChange={[Function]}
+            type="text"
+          />,
+          <input
+            className="submit-btn"
+            name="submit"
+            onSubmit={[Function]}
+            type="submit"
+          />,
+        ],
       },
       "ref": null,
-      "rendered": "CreateThought",
+      "rendered": Array [
+        "CreateThought",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "title",
+            "name": "title",
+            "onChange": [Function],
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "body",
+            "name": "body",
+            "onChange": [Function],
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "submit-btn",
+            "name": "submit",
+            "onSubmit": [Function],
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+      ],
       "type": "div",
     },
   ],
