@@ -8,7 +8,7 @@ class Search extends Component {
         render() {
         return (
             <div className="search-container">
-                <input className='search-input' placeholder='search thoughts'></input><button className='search-btn'><i className="fas fa-search"></i></button>
+                <input className='search-input' placeholder='search thoughts' onChange={this.props.searchThoughts}></input><button className='search-btn'><i className="fas fa-search"></i></button>
             </div>
         );
         }

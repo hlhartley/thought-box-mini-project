@@ -8,7 +8,7 @@ const Header = (props) => {
             <img className='box-img' src='./images/think-outside-the-box.gif'/>
             <h2 className='title'>ThoughtBox</h2>
             </div>
-            <Search />
+            <Search searchThoughts={props.searchThoughts}/>
         </div>
     )
 }

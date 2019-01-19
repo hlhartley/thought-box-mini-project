@@ -8,7 +8,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      thoughts: JSON.parse(localStorage.getItem('thought')) || []
+      thoughts: JSON.parse(localStorage.getItem('thought')) || [],
+      searchInput: ''
     };
   }
 
@@ -33,13 +34,17 @@ class App extends Component {
     localStorage.setItem('thought', JSON.stringify(filteredThoughts))
   }
 
+  searchThoughts(e) {
+    this.setState({searchInput: e.target.value})
+  }
+
   render() {
     return (
       <div className="app">
-        <Header />
+        <Header searchThoughts={this.searchThoughts.bind(this)}/>
         <CreateThought createThought={this.createThought} />
         <div className='thought-list-container'>
-          <ThoughtList thoughtList={this.state.thoughts} removeThought={this.removeThought.bind(this)}/>
+          <ThoughtList thoughtList={this.state.thoughts} searchInput={this.state.searchInput} removeThought={this.removeThought.bind(this)}/>
         </div>
       </div>
     );

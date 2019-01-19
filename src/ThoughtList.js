@@ -7,9 +7,11 @@ const ThoughtList = (props) => {
       New Thoughts:
       {
       props.thoughtList.map((thought) => {
-        return (
-          <ThoughtCard thought={thought} removeThought={props.removeThought}/>
-        )
+        if(thought.title.includes(props.searchInput) || thought.body.includes(props.searchInput)){
+          return (
+            <ThoughtCard thought={thought} removeThought={props.removeThought}/>
+          )
+        }
       })
     }
     </div>
