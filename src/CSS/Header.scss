@@ -1,6 +1,16 @@
 .header {
     display: flex;
-    background-color: green;
-    text-align: center;
     justify-content: center;
+    background-color: #7ccedc;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 45px;
+}
+
+.box-img {
+    width: 150px;
+    height: 150px;
 }

@@ -15,7 +15,8 @@ class CreateThought extends Component {
   }
 
   handleSubmit() {
-    this.props.createThought(this.state)
+    this.props.createThought(this.state);
+    this.setState({title: '', body: ''})
   }
 
   render() {

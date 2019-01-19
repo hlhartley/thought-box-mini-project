@@ -7,13 +7,13 @@ it('matches the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
 });
 
-it('renders a thoughtList with the correct props', () => {
-    const wrapper = shallow(<App />);
-    const { thoughtList, deleteThought, editThought } = wrapper.find(ThoughtList).props();
-    expect(thoughtList).toEqual([]);
-    expect(deleteThought).toBeInstanceOf(Function);
-    expect(editThought).toBeInstanceOf(Function);
-});
+// it('renders a thoughtList with the correct props', () => {
+//     const wrapper = shallow(<App />);
+//     const { thoughtList, deleteThought, editThought } = wrapper.find(ThoughtList).props();
+//     expect(thoughtList).toEqual([]);
+//     expect(deleteThought).toBeInstanceOf(Function);
+//     expect(editThought).toBeInstanceOf(Function);
+// });
 
 it('initial state is an empty array', () => {
 });

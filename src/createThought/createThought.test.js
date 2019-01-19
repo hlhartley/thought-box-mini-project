@@ -37,18 +37,20 @@ describe('CreateThought', () => {
     const wrapper = shallow(
       <CreateThought createThought={createThoughtMock} />
     );
-    // const expectedState = {
-    //   title: '',
-    //   body: ''
-    // };
-    wrapper.setState = {title: 'no', body: 'one'}
+    const expectedState = {
+      title: '',
+      body: ''
+    };
+    wrapper.setState({title: 'no', body: 'one'})
 
     // How do we call handleSubmit?
     wrapper.instance().handleSubmit()
     
     // How do we assert that our mock was called with the
     // correct params?
-    expect(wrapper.state()).toEqual({title: 'no', body: 'one'});
+    expect(createThoughtMock).toHaveBeenCalledWith({title: 'no', body: 'one'});
+    wrapper.find('.submit-btn').simulate('click')
+    expect(wrapper.state()).toEqual(expectedState);
   });
 
 });
