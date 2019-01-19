@@ -1,11 +1,11 @@
 import React from 'react';
 
 export const ThoughtList = (props) => {
-  let allThoughts = props.thoughtList;
   return (
-    <div>
+    <div className='thought-list-container'>
+      New Thoughts:
       {
-      allThoughts.map((thought) => {
+      props.thoughtList.map((thought) => {
         return (
           <div className='thought-card'>
             <div className='card-title'>{thought.title}</div>

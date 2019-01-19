@@ -8,14 +8,16 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      thoughts: []
+      thoughts: JSON.parse(localStorage.getItem('thought')) || []
     };
   }
 
   createThought = (thought) => {
     const { thoughts } = this.state
     const newThought = {...thought, id: thoughts.length}
-    this.setState({ thoughts: [...thoughts, newThought] });
+    this.setState({ thoughts: [...thoughts, newThought] }, 
+      () => localStorage.setItem('thought', JSON.stringify(this.state.thoughts))
+    );
   }
 
   render() {
