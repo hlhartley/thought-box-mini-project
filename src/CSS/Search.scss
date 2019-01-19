@@ -1,3 +1,26 @@
-input {
-    margin: 15px;
+.search-container {
+    margin-right: 25px;
 }
+
+.search-input {
+    margin: 15px;
+    height: 28px;
+    width: 315px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.search-btn {
+    margin-left: -16px;
+    background-color: #e1e2e1;
+    border: 1px solid grey;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 44px;
+    width: 44px;
+}
+
+.fa-search {
+    color: grey;
+}
+

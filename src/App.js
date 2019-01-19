@@ -23,7 +23,7 @@ class App extends Component {
       <div className="app">
         <Header />
         <CreateThought createThought={this.createThought} />
-        <div>
+        <div className='thought-list-container'>
           <ThoughtList thoughtList={this.state.thoughts} />
         </div>
       </div>

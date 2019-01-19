@@ -7,8 +7,8 @@ class Search extends Component {
 
         render() {
         return (
-            <div className="search">
-                Search<input></input>
+            <div className="search-container">
+                <input className='search-input' placeholder='search ideas'></input><button className='search-btn'><i className="fas fa-search"></i></button>
             </div>
         );
         }

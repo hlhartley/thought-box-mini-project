@@ -1,6 +1,23 @@
-.create-thought-container {
-    display: flex;
-    flex-flow: column;
-    width: auto;
-    text-align: center;
+// .create-thought-container {
+//     display: flex;
+//     flex-flow: column;
+//     text-align: center;
+// }
+
+#title-input {
+    height: 21px;
+    width: 500px;
+}
+
+#body-input {
+    height: 140px;
+    width: 500px;
+}
+
+.submit-btn {
+    margin: 10px 0 20px 0;
+    height: 35px;
+    color: white;
+    background-color: grey;
+    width: 518px;
 }

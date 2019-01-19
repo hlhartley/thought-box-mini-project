@@ -16,15 +16,16 @@ class CreateThought extends Component {
 
   handleSubmit() {
     this.props.createThought(this.state);
-    this.setState({title: '', body: ''})
+    document.getElementById('title-input').value = '';
+    document.getElementById('body-input').value = '';
   }
 
   render() {
     return(
       <div className='create-thought-container'>
-        Title: <input type='text' name='title' className='title' onChange={this.handleChange.bind(this)}></input>
-        Body: <input type='text' name='body' className='body' onChange={this.handleChange.bind(this)}></input>
-        <input type='submit' name='submit' className='submit-btn' onSubmit={this.handleSubmit.bind(this)}></input>
+        Title: <input type='text' name='title' id='title-input' onChange={this.handleChange.bind(this)}></input>
+        Body: <input type='text' name='body' id='body-input' onChange={this.handleChange.bind(this)}></input>
+        <input type='submit' name='submit' className='submit-btn' onClick={this.handleSubmit.bind(this)}></input>
       </div>
     );
   }
