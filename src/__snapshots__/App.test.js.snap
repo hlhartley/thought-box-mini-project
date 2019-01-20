@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches the snapshot 1`] = `
+exports[`App matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App />,
@@ -18,12 +18,18 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <Header
+          searchThoughts={[Function]}
+        />,
         <CreateThought
           createThought={[Function]}
         />,
-        <div>
+        <div
+          className="thought-list-container"
+        >
           <ThoughtList
+            removeThought={[Function]}
+            searchInput=""
             thoughtList={Array []}
           />
         </div>,
@@ -36,7 +42,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "searchThoughts": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -58,8 +66,11 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <ThoughtList
+            removeThought={[Function]}
+            searchInput=""
             thoughtList={Array []}
           />,
+          "className": "thought-list-container",
         },
         "ref": null,
         "rendered": Object {
@@ -67,6 +78,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "removeThought": [Function],
+            "searchInput": "",
             "thoughtList": Array [],
           },
           "ref": null,
@@ -85,12 +98,18 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <Header
+            searchThoughts={[Function]}
+          />,
           <CreateThought
             createThought={[Function]}
           />,
-          <div>
+          <div
+            className="thought-list-container"
+          >
             <ThoughtList
+              removeThought={[Function]}
+              searchInput=""
               thoughtList={Array []}
             />
           </div>,
@@ -103,7 +122,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "searchThoughts": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -125,8 +146,11 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <ThoughtList
+              removeThought={[Function]}
+              searchInput=""
               thoughtList={Array []}
             />,
+            "className": "thought-list-container",
           },
           "ref": null,
           "rendered": Object {
@@ -134,6 +158,8 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "removeThought": [Function],
+              "searchInput": "",
               "thoughtList": Array [],
             },
             "ref": null,

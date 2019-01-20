@@ -20,14 +20,14 @@ ShallowWrapper {
       "children": Array [
         "Title: ",
         <input
-          className="title"
+          id="title-input"
           name="title"
           onChange={[Function]}
           type="text"
         />,
         "Body: ",
         <input
-          className="body"
+          id="body-input"
           name="body"
           onChange={[Function]}
           type="text"
@@ -35,7 +35,7 @@ ShallowWrapper {
         <input
           className="submit-btn"
           name="submit"
-          onSubmit={[Function]}
+          onClick={[Function]}
           type="submit"
         />,
       ],
@@ -49,7 +49,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "title",
+          "id": "title-input",
           "name": "title",
           "onChange": [Function],
           "type": "text",
@@ -64,7 +64,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "body",
+          "id": "body-input",
           "name": "body",
           "onChange": [Function],
           "type": "text",
@@ -80,7 +80,7 @@ ShallowWrapper {
         "props": Object {
           "className": "submit-btn",
           "name": "submit",
-          "onSubmit": [Function],
+          "onClick": [Function],
           "type": "submit",
         },
         "ref": null,
@@ -99,14 +99,14 @@ ShallowWrapper {
         "children": Array [
           "Title: ",
           <input
-            className="title"
+            id="title-input"
             name="title"
             onChange={[Function]}
             type="text"
           />,
           "Body: ",
           <input
-            className="body"
+            id="body-input"
             name="body"
             onChange={[Function]}
             type="text"
@@ -114,7 +114,7 @@ ShallowWrapper {
           <input
             className="submit-btn"
             name="submit"
-            onSubmit={[Function]}
+            onClick={[Function]}
             type="submit"
           />,
         ],
@@ -128,7 +128,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "title",
+            "id": "title-input",
             "name": "title",
             "onChange": [Function],
             "type": "text",
@@ -143,7 +143,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "body",
+            "id": "body-input",
             "name": "body",
             "onChange": [Function],
             "type": "text",
@@ -159,7 +159,7 @@ ShallowWrapper {
           "props": Object {
             "className": "submit-btn",
             "name": "submit",
-            "onSubmit": [Function],
+            "onClick": [Function],
             "type": "submit",
           },
           "ref": null,
