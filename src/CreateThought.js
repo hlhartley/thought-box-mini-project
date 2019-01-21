@@ -17,6 +17,11 @@ class CreateThought extends Component {
 
   handleSubmit() {
     this.props.createThought(this.state);
+    this.setState({title: '', body: ''});
+    this.clearInputFields();
+  }
+  
+  clearInputFields() {
     document.getElementById('title-input').value = '';
     document.getElementById('body-input').value = '';
   }

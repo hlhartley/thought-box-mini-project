@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CSS/main.scss';
-import CreateThought from './createThought/CreateThought';
+import CreateThought from './CreateThought';
 import ThoughtList from './ThoughtList';
 import Header from './Header';
 
