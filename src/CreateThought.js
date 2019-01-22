@@ -10,12 +10,13 @@ class CreateThought extends Component {
   }
 }
 
-  handleChange(event) {
-    event.preventDefault();
-    this.setState({[event.target.name]: event.target.value})
+  handleChange(e) {
+    const { name, value } = e.target
+    this.setState({[name]: value})
   }
-
+  
   handleSubmit() {
+    e.preventDefault();
     this.props.createThought(this.state);
     this.setState({title: '', body: ''});
     this.clearInputFields();
@@ -27,12 +28,13 @@ class CreateThought extends Component {
   }
 
   render() {
+    const { title, body } = this.state
     return(
-      <div className='create-thought-container'>
-        Title: <input type='text' name='title' id='title-input' onChange={this.handleChange.bind(this)}></input>
-        Body: <input type='text' name='body' id='body-input' onChange={this.handleChange.bind(this)}></input>
-        <input type='submit' name='submit' className='submit-btn' onClick={this.handleSubmit.bind(this)}></input>
-      </div>
+      <form className='create-thought-container' onSubmit={this.handleSubmit.bind(this)}>
+        Title: <input value={title} type='text' name='title' id='title-input' onChange={this.handleChange.bind(this)}></input>
+        Body: <input value={body} type='text' name='body' id='body-input' onChange={this.handleChange.bind(this)}></input>
+        <button name='submit' className='submit-btn'>Submit</button>
+      </form>
     );
   }
 }

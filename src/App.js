@@ -15,7 +15,7 @@ class App extends Component {
 
   createThought = (thought) => {
     const { thoughts } = this.state
-    const newThought = {...thought, id: thoughts.length}
+    const newThought = {...thought, id: Date.now()}
     this.setState({ thoughts: [...thoughts, newThought] }, 
       () => localStorage.setItem('thought', JSON.stringify(this.state.thoughts))
     );
