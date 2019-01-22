@@ -15,7 +15,7 @@ class CreateThought extends Component {
     this.setState({[name]: value})
   }
   
-  handleSubmit() {
+  handleSubmit(e) {
     e.preventDefault();
     this.props.createThought(this.state);
     this.setState({title: '', body: ''});

@@ -9,7 +9,7 @@ const ThoughtList = (props) => {
       props.thoughtList.map((thought) => {
         if(thought.title.includes(props.searchInput) || thought.body.includes(props.searchInput)){
           return (
-            <ThoughtCard thought={thought} removeThought={props.removeThought}/>
+            <ThoughtCard key={thought.id} thought={thought} removeThought={props.removeThought}/>
           )
         }
       })
